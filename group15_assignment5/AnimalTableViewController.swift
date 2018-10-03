@@ -18,7 +18,7 @@ class AnimalTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        content += [animal1, animal2, animal3]
+        content += [animal1, animal1, animal2, animal2, animal3, animal3]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -46,26 +46,22 @@ class AnimalTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cellIdentifier = "ImageNameTableViewCell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! ImageNameTableViewCell
-        
-        let animal = content[indexPath.row]
-        cell.cellLabel?.text = animal.name
-        cell.cellImage?.image = UIImage(named: animal.image)
-        
-        /*
-        let cellIdentifier2 = "InfoTableViewCell"
-        let cell2 = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! InfoTableViewCell
-        
-        cell2.scientificNameLabel?.text = animal.scientificName
-        cell2.classLabel?.text = animal.animalClass
-        cell2.weightLabel?.text = "\(animal.size) kg"
-         */
-
-        return cell
-        
-        
+        if indexPath.row%2 == 0 {
+            let cellIdentifier = "ImageNameTableViewCell"
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! ImageNameTableViewCell
+            let animal = content[indexPath.row]
+            cell.cellLabel?.text = animal.name
+            cell.cellImage?.image = UIImage(named: animal.image)
+            return cell
+        } else {
+            let cellIdentifier2 = "InfoTableViewCell"
+            let cell2 = tableView.dequeueReusableCell(withIdentifier: cellIdentifier2, for: indexPath) as! InfoTableViewCell
+            let animal2 = content[indexPath.row]
+            cell2.scientificNameLabel?.text = animal2.scientificName
+            cell2.classLabel?.text = animal2.animalClass
+            cell2.weightLabel?.text = "\(animal2.size) kg"
+            return cell2
+        }
     }
     
 
