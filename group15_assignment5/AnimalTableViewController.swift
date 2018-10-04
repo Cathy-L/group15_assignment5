@@ -14,11 +14,12 @@ class AnimalTableViewController: UITableViewController {
     var animal1 = Animal(name: "Cat", scientificName: "Felis catus", animalClass: "Mammalia", size: 5.0, image: "cat")
     var animal2 = Animal(name: "Gorilla", scientificName: "Gorilla gorilla", animalClass: "Mammalia", size: 220.0, image: "gorilla")
     var animal3 = Animal(name: "Dog", scientificName: "Canis lupus familiaris", animalClass: "Mammalia", size: 10.0, image: "dog")
+    var animal4 = Animal(name: "Axolotl", scientificName: "Ambystoma mexicanum", animalClass: "Amphibia", size: 0.2, image: "axolotl")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        content += [animal1, animal1, animal2, animal2, animal3, animal3]
+        content += [animal1, animal1, animal2, animal2, animal3, animal3, animal4, animal4]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
