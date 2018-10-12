@@ -10,4 +10,5 @@ import UIKit
 
 class HeaderFooterCollectionReusableView: UICollectionReusableView {
         
+    @IBOutlet weak var headerLabel: UILabel!
 }
