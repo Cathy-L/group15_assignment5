@@ -20,65 +20,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func collectionView(_ collectionView: UICollectionView,
-                        viewForSupplementaryElementOfKind kind: String,
-                        at indexPath: IndexPath) -> UICollectionReusableView {
-        //1
-        switch kind {
-        //2
-        case UICollectionElementKindSectionHeader:
-            //3
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
-                                                                             withReuseIdentifier: "HeaderReusableView",
-                                                                             for: indexPath) as! HeaderFooterCollectionReusableView
-            headerView.headerLabel.text = "Hello"
-            return headerView
-        default:
-            //4
-            assert(false, "Unexpected element kind")
-        }
-    }
-    
-    /*-- func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        
-        switch kind {
-        case UICollectionElementKindSectionHeader:
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HeaderReusableView", for: indexPath) as! HeaderFooterCollectionReusableView
-            
-            
-            headerView.headerLabel.text = "Hello"
-            return headerView
-            
-            
-        default:  fatalError("Unexpected element kind")
-        }
-    } --*/
-    
 
 
 }
-
-/*-- MARK: - UICollectionViewDataSource
-extension ViewController {
-     func collectionView(_ collectionView: UICollectionView,
-                                 viewForSupplementaryElementOfKind kind: String,
-                                 at indexPath: IndexPath) -> UICollectionReusableView {
-        //1
-        switch kind {
-        //2
-        case UICollectionElementKindSectionHeader:
-            //3
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
-                                                                             withReuseIdentifier: "HeaderReusableView",
-                                                                             for: indexPath) as! HeaderFooterCollectionReusableView
-            headerView.headerLabel.text = "Hello"
-            return headerView
-        default:
-            //4
-            assert(false, "Unexpected element kind")
-        }
-    }
-    
-}--*/
-
 

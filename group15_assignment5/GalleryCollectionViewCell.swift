@@ -10,4 +10,16 @@ import UIKit
 
 class GalleryCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var caption: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+    
+    public func configure(with model: GalleryItem) {
+        image.image = model.image
+        caption.text = model.caption
+    }
 }

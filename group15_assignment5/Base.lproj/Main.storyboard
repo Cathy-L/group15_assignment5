@@ -153,28 +153,55 @@
             </objects>
             <point key="canvasLocation" x="647.20000000000005" y="849.62518740629696"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Gallery Collection View Controller-->
         <scene sceneID="oVM-Fi-z9k">
             <objects>
-                <collectionViewController id="5PF-2q-mO4" sceneMemberID="viewController">
+                <collectionViewController id="5PF-2q-mO4" customClass="GalleryCollectionViewController" customModule="group15_assignment5" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="mMQ-Ss-pnM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fLV-s0-1Rq">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="320" height="383"/>
                             <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="50" height="50"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryCollectionViewCell" id="3le-7p-nb6" customClass="GalleryCollectionViewCell" customModule="group15_assignment5" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="50" width="320" height="383"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="383"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mc6-UR-xi6">
+                                            <rect key="frame" x="8" y="23" width="304" height="21"/>
+                                            <color key="backgroundColor" red="0.97576948283856302" green="0.97429806922414031" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="atO-bG-zQ3">
+                                            <rect key="frame" x="40" y="44" width="240" height="153"/>
+                                        </imageView>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="atO-bG-zQ3" firstAttribute="width" secondItem="3le-7p-nb6" secondAttribute="width" multiplier="0.75" id="62j-Aq-dev"/>
+                                    <constraint firstItem="atO-bG-zQ3" firstAttribute="top" secondItem="mc6-UR-xi6" secondAttribute="bottom" id="8lU-RF-ZeX"/>
+                                    <constraint firstItem="mc6-UR-xi6" firstAttribute="leading" secondItem="3le-7p-nb6" secondAttribute="leadingMargin" id="F1f-OY-ATC"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="mc6-UR-xi6" secondAttribute="trailing" id="XtG-tw-yJY"/>
+                                    <constraint firstItem="mc6-UR-xi6" firstAttribute="centerX" secondItem="3le-7p-nb6" secondAttribute="centerX" id="ivL-u2-X2i"/>
+                                    <constraint firstItem="atO-bG-zQ3" firstAttribute="width" secondItem="3le-7p-nb6" secondAttribute="height" multiplier="240:383" id="pY0-b1-abR"/>
+                                    <constraint firstItem="atO-bG-zQ3" firstAttribute="height" secondItem="3le-7p-nb6" secondAttribute="height" multiplier="0.4" id="qax-Xz-Abm"/>
+                                    <constraint firstItem="atO-bG-zQ3" firstAttribute="centerX" secondItem="3le-7p-nb6" secondAttribute="centerX" id="s3X-Vd-Ee4"/>
+                                    <constraint firstItem="mc6-UR-xi6" firstAttribute="top" secondItem="3le-7p-nb6" secondAttribute="topMargin" constant="15" id="xxJ-K6-Dvu"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="caption" destination="mc6-UR-xi6" id="s8Z-yk-Aa3"/>
+                                    <outlet property="image" destination="atO-bG-zQ3" id="BhR-qg-NPf"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HeaderReusableView" id="Oty-1Y-uir" customClass="HeaderFooterCollectionReusableView" customModule="group15_assignment5" customModuleProvider="target">
@@ -198,7 +225,7 @@
                             </connections>
                         </collectionReusableView>
                         <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="FooterReusableView" id="UqW-1f-czo" customClass="HeaderFooterCollectionReusableView" customModule="group15_assignment5" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="100" width="320" height="50"/>
+                            <rect key="frame" x="0.0" y="433" width="320" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Footer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTt-zc-Dfs">
@@ -225,7 +252,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66b-w8-yvb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1604" y="750"/>
+            <point key="canvasLocation" x="1603.125" y="750"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IXu-22-DSk">
