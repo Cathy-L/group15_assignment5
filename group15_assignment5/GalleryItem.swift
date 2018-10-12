@@ -8,7 +8,4 @@
 
 import Foundation
 
-struct GalleryItem {
-    let image: UIImage
-    let caption: String
-}
+

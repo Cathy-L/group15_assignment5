@@ -7,17 +7,6 @@
 //
 
 
-import UIKit
-
-final class GalleryCollectionViewController: UICollectionViewController {
-    
-    // MARK: - Properties
-    fileprivate let reuseIdentifier = "GalleryCollectionViewCell"
-}
-
-
-
-/*-- Original Code
 
 import UIKit
 
@@ -53,22 +42,27 @@ class GalleryCollectionViewController: UICollectionViewController {
     */
 
     // MARK: UICollectionViewDataSource
+    
+    var tableData: [String] = ["Evo X", "458", "GTR"]
+    var tableImages: [String] = ["cat1", "cat2", "cat3"]
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GalleryCollectionViewCell", for: indexPath) as! GalleryCollectionViewCell
     
         // Configure the cell
+        cell.caption?.text = "Hi"
+        cell.image?.image = UIImage(named: "cat1")
     
         return cell
     }
@@ -106,4 +100,3 @@ class GalleryCollectionViewController: UICollectionViewController {
 
 }
 
- */
