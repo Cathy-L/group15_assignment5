@@ -16,6 +16,7 @@
 		4C3A7B512163C11B00279879 /* AnimalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A7B502163C11B00279879 /* AnimalTableViewController.swift */; };
 		4C3A7B532163C28600279879 /* ImageNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A7B522163C28600279879 /* ImageNameTableViewCell.swift */; };
 		4C3A7B75216407DA00279879 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A7B74216407DA00279879 /* InfoTableViewCell.swift */; };
+		4C998F092170E63A009CDA37 /* GalleryItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C998F082170E63A009CDA37 /* GalleryItem.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4C3A7B502163C11B00279879 /* AnimalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewController.swift; sourceTree = "<group>"; };
 		4C3A7B522163C28600279879 /* ImageNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNameTableViewCell.swift; sourceTree = "<group>"; };
 		4C3A7B74216407DA00279879 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		4C998F082170E63A009CDA37 /* GalleryItem.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GalleryItem.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		4C3A7B3B2163B91B00279879 /* group15_assignment5 */ = {
 			isa = PBXGroup;
 			children = (
+				4C998F082170E63A009CDA37 /* GalleryItem.plist */,
 				4C3A7B3C2163B91B00279879 /* AppDelegate.swift */,
 				4C3A7B3E2163B91B00279879 /* ViewController.swift */,
 				4C3A7B4E2163BCD300279879 /* Animal.swift */,
@@ -136,6 +139,7 @@
 			files = (
 				4C3A7B472163B91C00279879 /* LaunchScreen.storyboard in Resources */,
 				4C3A7B442163B91C00279879 /* Assets.xcassets in Resources */,
+				4C998F092170E63A009CDA37 /* GalleryItem.plist in Resources */,
 				4C3A7B422163B91B00279879 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
