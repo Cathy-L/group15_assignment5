@@ -3,36 +3,76 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>cat1</key>
-		<string>Happy kitty</string>
-		<key>cat2</key>
-		<string>Sad kitty</string>
-		<key>cat3</key>
-		<string>Little ball of fur</string>
+		<key>Caption</key>
+		<string>look at that smile</string>
+		<key>Photo</key>
+		<string>axolotl1</string>
 	</dict>
 	<dict>
-		<key>dog1</key>
-		<string>Puppies!</string>
-		<key>dog2</key>
-		<string>MORE puppies!!</string>
-		<key>dog3</key>
-		<string>EVEN MORE PUPPIES!!!</string>
+		<key>Caption</key>
+		<string>the happiest amphibian</string>
+		<key>Photo</key>
+		<string>axolotl2</string>
 	</dict>
 	<dict>
-		<key>gorilla1</key>
-		<string>Gorilla</string>
-		<key>gorilla2</key>
-		<string>Gorilla gorilla</string>
-		<key>gorilla3</key>
-		<string>Gorilla gorilla gorilla</string>
+		<key>Caption</key>
+		<string>so cute</string>
+		<key>Photo</key>
+		<string>axolotl3</string>
 	</dict>
 	<dict>
-		<key>axolotl1</key>
-		<string>Look at that smile</string>
-		<key>axolotl2</key>
-		<string>Axolotls are the happiest amphibian on earth</string>
-		<key>axolotl3</key>
-		<string>So cute :3</string>
+		<key>Caption</key>
+		<string>gorilla</string>
+		<key>Photo</key>
+		<string>gorilla1</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>gorilla gorilla</string>
+		<key>Photo</key>
+		<string>gorilla2</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>gorilla gorilla gorilla</string>
+		<key>Photo</key>
+		<string>gorilla3</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>blep</string>
+		<key>Photo</key>
+		<string>dog1</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>oh wow</string>
+		<key>Photo</key>
+		<string>dog2</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>lots of puppers</string>
+		<key>Photo</key>
+		<string>dog3</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>happy kitty</string>
+		<key>Photo</key>
+		<string>cat1</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>sad kitty</string>
+		<key>Photo</key>
+		<string>cat2</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>little ball of fur</string>
+		<key>Photo</key>
+		<string>cat3</string>
 	</dict>
 </array>
 </plist>

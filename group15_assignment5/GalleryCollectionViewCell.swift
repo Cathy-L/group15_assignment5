@@ -13,4 +13,12 @@ class GalleryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var caption: UILabel!
     
+    var photo: Gallery? {
+        didSet {
+            if let photo = photo {
+                image.image = photo.image
+                caption.text = photo.caption
+            }
+        }
+    }
 }

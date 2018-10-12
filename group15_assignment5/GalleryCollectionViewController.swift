@@ -13,6 +13,8 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class GalleryCollectionViewController: UICollectionViewController {
+    
+    var gallery = Gallery.allPhotos()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,16 +56,16 @@ class GalleryCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 1
+        return gallery.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GalleryCollectionViewCell", for: indexPath) as! GalleryCollectionViewCell
     
         // Configure the cell
-        cell.caption?.text = "Hi"
-        cell.image?.image = UIImage(named: "cat1")
-    
+        //cell.caption?.text = "Hi"
+        //cell.image?.image = UIImage(named: "cat1")
+        cell.photo = gallery[indexPath.item]
         return cell
     }
 
