@@ -10,5 +10,29 @@
 		<key>cat3</key>
 		<string>Little ball of fur</string>
 	</dict>
+	<dict>
+		<key>dog1</key>
+		<string>Puppies!</string>
+		<key>dog2</key>
+		<string>MORE puppies!!</string>
+		<key>dog3</key>
+		<string>EVEN MORE PUPPIES!!!</string>
+	</dict>
+	<dict>
+		<key>gorilla1</key>
+		<string>Gorilla</string>
+		<key>gorilla2</key>
+		<string>Gorilla gorilla</string>
+		<key>gorilla3</key>
+		<string>Gorilla gorilla gorilla</string>
+	</dict>
+	<dict>
+		<key>axolotl1</key>
+		<string>Look at that smile</string>
+		<key>axolotl2</key>
+		<string>Axolotls are the happiest amphibian on earth</string>
+		<key>axolotl3</key>
+		<string>So cute :3</string>
+	</dict>
 </array>
 </plist>
