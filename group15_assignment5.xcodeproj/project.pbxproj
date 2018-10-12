@@ -17,6 +17,7 @@
 		4C3A7B532163C28600279879 /* ImageNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A7B522163C28600279879 /* ImageNameTableViewCell.swift */; };
 		4C3A7B75216407DA00279879 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A7B74216407DA00279879 /* InfoTableViewCell.swift */; };
 		4C998F092170E63A009CDA37 /* GalleryItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C998F082170E63A009CDA37 /* GalleryItem.plist */; };
+		4C998F0B2170FE5D009CDA37 /* HeaderFooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C998F0A2170FE5D009CDA37 /* HeaderFooterCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4C3A7B522163C28600279879 /* ImageNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNameTableViewCell.swift; sourceTree = "<group>"; };
 		4C3A7B74216407DA00279879 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		4C998F082170E63A009CDA37 /* GalleryItem.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GalleryItem.plist; sourceTree = "<group>"; };
+		4C998F0A2170FE5D009CDA37 /* HeaderFooterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderFooterCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				4C3A7B432163B91C00279879 /* Assets.xcassets */,
 				4C3A7B452163B91C00279879 /* LaunchScreen.storyboard */,
 				4C3A7B482163B91C00279879 /* Info.plist */,
+				4C998F0A2170FE5D009CDA37 /* HeaderFooterCollectionReusableView.swift */,
 			);
 			path = group15_assignment5;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				4C3A7B75216407DA00279879 /* InfoTableViewCell.swift in Sources */,
 				4C3A7B4F2163BCD300279879 /* Animal.swift in Sources */,
 				4C3A7B512163C11B00279879 /* AnimalTableViewController.swift in Sources */,
+				4C998F0B2170FE5D009CDA37 /* HeaderFooterCollectionReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
