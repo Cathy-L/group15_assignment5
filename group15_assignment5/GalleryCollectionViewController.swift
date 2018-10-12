@@ -68,6 +68,19 @@ class GalleryCollectionViewController: UICollectionViewController {
         cell.photo = gallery[indexPath.item]
         return cell
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if (kind == UICollectionElementKindSectionFooter) {
+            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "FooterReusableView", for: indexPath)
+            // Customize footerView here
+            return footerView
+        } else if (kind == UICollectionElementKindSectionHeader) {
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderReusableView", for: indexPath)
+            // Customize headerView here
+            return headerView
+        }
+        fatalError()
+    }
 
     // MARK: UICollectionViewDelegate
 
