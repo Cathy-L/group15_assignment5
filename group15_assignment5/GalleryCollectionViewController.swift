@@ -12,7 +12,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class GalleryCollectionViewController: UICollectionViewController {
+class GalleryCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     var gallery = Gallery.allPhotos()
 
@@ -69,18 +69,21 @@ class GalleryCollectionViewController: UICollectionViewController {
         return cell
     }
     
+    //*
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if (kind == UICollectionElementKindSectionFooter) {
-            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "FooterReusableView", for: indexPath)
-            // Customize footerView here
+            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "FooterReusableView", for: indexPath) as! HeaderFooterCollectionReusableView
+            footerView.footerLabel.text = "We hope you loved the animals."
             return footerView
         } else if (kind == UICollectionElementKindSectionHeader) {
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderReusableView", for: indexPath)
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderReusableView", for: indexPath) as! HeaderFooterCollectionReusableView
             // Customize headerView here
+            headerView.headerLabel.text = "Animals We Love"
             return headerView
         }
         fatalError()
     }
+    
 
     // MARK: UICollectionViewDelegate
 
